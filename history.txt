@@ -1,0 +1,38 @@
+mkdir git-majonez
+cd git-majonez
+git init
+
+touch main.cpp
+vim main.cpp
+
+git add main.cpp
+git commit -m"Initial commit"
+
+vim main.cpp
+git add main.cpp
+git commit -m"Farewell changed"
+
+git remote add origin https://github.com/Krzysiek7K/git.majonez.git
+git push -u origin master
+
+
+
+git checkout -b cs
+git reset ebdea85103d4e29b2f82ea4c2167a8c1e524e714
+vim main.cpp
+git add main.cpp
+git commit -m"Greetings"
+
+
+git push origin cs
+
+
+git switch master
+git merge cs
+vim main.cpp
+
+
+git touch history.txt
+vim history.txt
+git add history.txt
+git commit -m"History added"  
