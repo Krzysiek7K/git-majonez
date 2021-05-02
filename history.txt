@@ -30,6 +30,7 @@ git push origin cs
 git switch master
 git merge cs
 vim main.cpp
+git merge cs
 
 
 git touch history.txt
